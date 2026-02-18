@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-profit: #16a34a;
+  --color-profit-light: #dcfce7;
+  --color-loss: #dc2626;
+  --color-loss-light: #fee2e2;
+  --color-primary: #4f46e5;
+  --color-primary-light: #e0e7ff;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+/* Minimal dark mode styling (Tailwind class-based dark mode) */
+html.dark {
+  background-color: #0b1220;
+}
+
+html.dark body {
+  background-color: #0b1220;
+  color: #e5e7eb;
+}
+
+/* Reasonable defaults for common utility colors used in this project */
+html.dark .bg-white { background-color: #0f172a !important; }
+html.dark .bg-gray-50 { background-color: #0b1220 !important; }
+html.dark .bg-gray-100 { background-color: #111827 !important; }
+html.dark .text-gray-800 { color: #e5e7eb !important; }
+html.dark .text-gray-700 { color: #e5e7eb !important; }
+html.dark .text-gray-600 { color: #d1d5db !important; }
+html.dark .text-gray-500 { color: #cbd5e1 !important; }
+html.dark .text-gray-400 { color: #94a3b8 !important; }
+html.dark .border-gray-100 { border-color: #1f2937 !important; }
+html.dark .border-gray-200 { border-color: #1f2937 !important; }
+html.dark .divide-gray-50 > :not([hidden]) ~ :not([hidden]) { border-color: #111827 !important; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
